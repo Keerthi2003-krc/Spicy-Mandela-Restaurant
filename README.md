@@ -20,13 +20,7 @@ A colorful and responsive landing page for a fictional restaurant based in Madur
 ---
 
 ## 📸 Preview
-![Preview](Images/Preview.png) <!-- Replace with actual image if uploaded -->
-
----
-
-## 🚀 Live Demo (Optional)
-[Click to view live](https://yourusername.github.io/spicy-mandala-restaurant/)  
-_(Hosted via GitHub Pages)_
+![Preview](Images/Background.png) <!-- Replace with actual image if uploaded -->
 
 ---
 
