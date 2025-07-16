@@ -20,7 +20,7 @@ A colorful and responsive landing page for a fictional restaurant based in Madur
 ---
 
 ## 📸 Preview
-![Preview](Images/Background.png) <!-- Replace with actual image if uploaded -->
+![Preview](Images/Preview.png.png) <!-- Replace with actual image if uploaded -->
 
 ---
 
