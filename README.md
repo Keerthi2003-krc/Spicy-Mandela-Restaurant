@@ -24,4 +24,3 @@ A colorful and responsive landing page for a fictional restaurant based in Madur
 
 ---
 
-## 📁 Folder Structure
