@@ -1,0 +1,211 @@
+:root {
+    --Green: #347433;
+    --Red: #B22222;
+    --lightorange: #FF6F3C;
+    --yellow: #FFC107;
+    --White: #ffffff;
+}
+
+/* Base Reset */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body, h2 {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Landing Section */
+.Landing {
+    background-image: url("/Images/Background.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color: var(--White);
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 2em;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+header a {
+    text-decoration: none;
+    color: var(--White);
+    font-weight: bold;
+}
+
+#Logo {
+    font-size: 1.5em;
+}
+
+nav {
+    display: flex;
+    gap: 1em;
+}
+
+nav a:hover {
+    color: var(--yellow);
+}
+
+/* Main Text Section */
+.Maintext {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 50vh;
+    padding: 2em;
+}
+
+.Tagline1 {
+    color: var(--White);
+    font-size: 2.5em;
+    font-weight: bolder;
+}
+
+.Tagline2 {
+    color: var(--Red);
+    font-size: 1.5em;
+}
+
+.Maintext div {
+    margin-top: 0.75em;
+}
+
+.Maintext button {
+    width: 200px;
+    margin-top: 2em;
+    border-radius: 10px;
+    padding: 0.7em;
+    background-color: var(--Green);
+    color: var(--White);
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.Maintext button:hover {
+    background-color: var(--Red);
+}
+
+/* Menu Heading */
+#Menuheading {
+    background: linear-gradient(to right, var(--lightorange), var(--lightorange));
+    font-size: 2.5em;
+    color: var(--Green);
+    text-align: center;
+    padding: 0.5em;
+}
+
+/* Menu Section */
+.menu {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2em;
+    padding: 2em;
+    background: linear-gradient(to right, var(--lightorange), var(--lightorange));
+    color: var(--White);
+}
+
+.menu table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1em;
+}
+
+.menu th {
+    font-size: 1.2em;
+    background-color: var(--Red);
+    color: white;
+    padding: 0.5em;
+}
+
+.menu td {
+    padding: 0.5em;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.menu td:last-child {
+    text-align: right;
+}
+
+.menu td:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Locations Heading */
+#locheading {
+    font-size: 2.5em;
+    color: var(--Green);
+    text-align: center;
+    padding: 0.5em;
+    margin: 0;
+}
+
+/* Location Columns */
+.Locations {
+    background: linear-gradient(to right, #f06f3c, #ff6f3c);
+    padding-top: 1em;
+}
+
+.location-columns {
+    display: flex;
+    justify-content: center;
+    gap: 5em;
+    text-align: center;
+    flex-wrap: wrap;
+    padding: 2em;
+    color: var(--White);
+}
+
+.location-columns > div {
+    flex: 1;
+    max-width: 300px;
+}
+
+.location-columns h3 {
+    margin-bottom: 0.5em;
+    font-size: 1.5em;
+    color: var(--yellow);
+}
+
+.location-columns address {
+    font-style: normal;
+    line-height: 1.8;
+    font-size: 1em;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .location-columns {
+        flex-direction: column;
+        align-items: center;
+        gap: 2em;
+    }
+
+    .Maintext {
+        text-align: center;
+        align-items: center;
+    }
+
+    .Maintext button {
+        width: 100%;
+    }
+
+    #Menuheading,
+    #locheading {
+        font-size: 2em;
+    }
+
+    .menu {
+        grid-template-columns: 1fr;
+    }
+}
